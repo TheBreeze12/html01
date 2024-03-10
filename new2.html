@@ -1,188 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>周深-小美满</title>
     <style>
-        body{
-            margin: 0;
-            height:100vh;
-            background-color: rgb(233, 231, 231);
-        }
-        *{
-            border: 1px  black;
-        }
-        .flex{
-            display:flex;
-    
-        }
-    .baise{
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: rgb(233, 231, 231);
+      }
+      * {
+        border: 1px black;
+      }
+      .flex {
+        display: flex;
+      }
+      .baise {
         background-color: white;
-    }
-    .flex1{
+      }
+      .flex1 {
         flex: 1;
-    }
-    .column{
+      }
+      .column {
         flex-direction: column;
-    }
-    .mg8{
-        margin:8px;
-    }
-    .mgr8{
-        margin-right:8px;
-    }
-    .mgt8{
-        margin-top:8px;
-    }
-    .mgl8{
-        margin-left:8px;}
-    .yinying{
+      }
+      .mg8 {
+        margin: 8px;
+      }
+      .mgr8 {
+        margin-right: 8px;
+      }
+      .mgt8 {
+        margin-top: 8px;
+      }
+      .mgl8 {
+        margin-left: 8px;
+      }
+      .yinying {
         box-shadow: ;
-    }
-    .daohang{
-        padding:10px 20px;
+      }
+      .daohang {
+        padding: 10px 20px;
         border-bottom: 1px solid black;
         font-size: 14px;
-        color:#171718;
-    }
+        color: #171718;
+      }
+      @media (max-width: 600px) {
+        .cebian {
+          display: none;
+        }
+        .neirong {
+          flex-direction: column;
+        }
+        .shuju {
+          flex-direction: column;
+        }
+      }
     </style>
-</head>
-<body class="flex">
+  </head>
+  <body class="flex neirong">
     <!--侧边栏-->
-    <div  style="font-family: system-ui;padding:20px;border-radius:5px;border:8px solid #EE872A;"  >
-        <div style="padding:5px;align-items:center;justify-content:center;" class="flex">
-            <img src="./123.jpg" width="150" height="120" />
+    <div
+      style="
+        font-family: system-ui;
+        padding: 20px;
+        border-radius: 5px;
+        z-index: 2;
+        border: 8px solid #ee872a;
+      "
+    
+    >
+      <div
+        style="padding: 5px; align-items: center; justify-content: center"
+        class="flex"
+      >
+        <img src="./123.jpg" width="150" height="120" />
+      </div>
+      <div
+        style="
+          align-items: center;
+          justify-content: center;
+          border-bottom: 1px solid #999;
+        "
+        class="flex"
+      >
+        <p><b>The Breeze</b></p>
+      </div>
+      <div class="flex1">
+        <div class="daohang">
+          <a href="./index.html" style="text-decoration: none; color: #171718"
+            >😊了解作者</a
+          >
         </div>
-        <div  style="align-items:center;justify-content:center;border-bottom:1px solid #999" class="flex"><p><b>The Breeze</b></p></div>
-        <div class="flex1" >
-            <div class="daohang"><a href="./index.html"  style="text-decoration:none;color:#171718">😊了解作者</a></div>
-            <div class="daohang"><a href="./login2.html" target="_blank" style="text-decoration:none;color:#171718">🥰登陆注册</a></div>
-            <div class="daohang"><a
-                href="./new.html"
-                style="text-decoration: none; color: #171718"
-                >🦄欣赏图片</a
-              ></div>
-            <div class="daohang"><a
-                href="./new2.html"
-                style="text-decoration: none; color: #171718"
-                >🎶欣赏音乐</a
-              ></div>
-            <div class="daohang">敬请期待</div>
+        <div class="daohang">
+          <a
+            href="./login2.html"
+            target="_blank"
+            style="text-decoration: none; color: #171718"
+            >🥰登陆注册</a
+          >
         </div>
+        <div class="daohang">
+          <a href="./new.html" style="text-decoration: none; color: #171718"
+            >🦄欣赏图片</a
+          >
+        </div>
+        <div class="daohang">
+          <a href="./new2.html" style="text-decoration: none; color: #171718"
+            >🎶欣赏音乐</a
+          >
+        </div>
+        <div class="daohang">敬请期待</div>
+      </div>
     </div>
     <!--主区域-->
     <div class="flex1 flex column">
-        <!--顶部栏-->
-        <div style="height:70px ;background:#EE872A;border-radius:5px;opacity:0.5" class="mgl8 mgr8"  >
-            </div>
-            <div class="fle flex1" style="overflow:auto">
-
-                <div
-                style="
-                  background: #f1c3d2;
-                  text-align: center;
-                  padding: 40px;
-                  text-align: center;
-                  padding: 40px;
-                "
-              >
-                <h1>周深-小美满</h1>
-                <img src="./5.jpg" width="500" height="300" />
-                <audio controls>
-                  <source src="11.ogg" type="audio/ogg" />
-                  <source src="11.mp3" type="audio/mpeg" />
-                  您的浏览器不支持 audio 元素。
-                </audio>
-                <div style="text-align: end">
-                    <p>返回首页?</p>
-                    <a href="./first.html" target="_top">点击这里!</a>
-                  </div>
-              </div>
-              <div
-                style="
-                  max-width: 700px;
-                  margin: 30px auto;
-                  padding: 15px;
-                  line-height: 1.7;
-                "
-              >
-                <b>歌词</b>
-                <p>没什么 大愿望</p>
-                <p></p>
-                没有什么事 要赶
-                <p></p>
-                看见路口红灯 一直闪
-                <p></p>
-                它像 眨眼的小太阳
-                <p></p>
-                乌云还 挺大胆
-                <p></p>
-                顶在头上 吹不散
-                <p></p>
-                我抓在手里 捏成棉花糖
-                <p></p>
-                什么烦恼 不能忘
-                <p>既然 是路一定有转弯</p>
-                <p>哪个风景 都漂亮</p>
-                <p>揉揉疲惫的眼睛 停下来 看一看</p>
-                <p>美好简单</p>
-                <p>你看</p>
-                <p>小狗在叫 树叶会笑</p>
-                <p>风声在呢喃</p>
-                <p>不如好好 欣赏一秒</p>
-                <p>迷迷糊糊的 浪漫</p>
-                <p>只要 一觉醒来 床单洒满</p>
-                <p>阳光的 温暖</p>
-                <p>不去想 不必想</p>
-                <p>不用急急忙忙 说一个 答案</p>
-                <p>笑一笑 就灿烂</p>
-                <p>唱一句歌 就舒展</p>
-                <p>收集一点一滴 小美满</p>
-                <p>都是 幸福的花样</p>
-                <p>没道理 的开朗</p>
-                <p>打扮 平凡的日常</p>
-                <p>找到自己 最合身的衣裳</p>
-                <p>只要自己 够喜欢</p>
-                <p>至少 还有温柔的眼光</p>
-                <p>还在夜里 看月亮</p>
-                <p>心情铺得再满 也要留一扇天窗</p>
-                <p>岁月很长</p>
-                <p><b>你看</b></p>
-                <p><b>小狗在叫 树叶会笑</b></p>
-                <p><b>风声在呢喃</b></p>
-                <p><b>不如好好 欣赏一秒</b></p>
-                <p><b>迷迷糊糊的浪漫</b></p>
-                <p><b>只要 一觉醒来 床单洒满</b></p>
-                <p><b>阳光的温暖</b></p>
-                <p><b>不去想 不必想</b></p>
-                <p><b>不用急急忙忙 说一个 答案</b></p>
-                <p>你愿相信什么</p>
-                <p>就把世界 看成什么样</p>
-                <p>偶尔难题 加点重量</p>
-                <p>越要 轻轻地旋转</p>
-                <p>所以 无论如何</p>
-                <p>记得保管 小小的光环</p>
-                <p>笑就好 哭也好</p>
-                <p>今天 就是明天最好的 陪伴</p>
-                <p>笑就好 哭也好</p>
-                <p>自己 就是自己最好的 陪伴</p>
-                <p>功能有待完善，<b>敬请期待</b></p>
-              </div>
-          
-
-                </div>
-
-        
+      <!--顶部栏-->
+      <div
+        style="height: 70px; background: #ee872a; opacity: 0.5; z-index: 1"
+        class="mgl8 mgr8 cebian"
+      ></div>
+      <div style="overflow: auto" class="flex1 flex mgl8 mgt8 neirong">
         <div
+          style="
+            background: #f1c3d2;
+            text-align: center;
+            padding: 40px;
+            text-align: center;
+            padding: 40px;
+            z-index: 1;
+          "
+          class="neirong"
+        >
+          <div class="flex:1 neirong">
+            <h1>周深-小美满</h1>
+            <img src="./5.jpg" width="250" height="150" /><br />
+            <audio controls>
+              <source src="11.ogg" type="audio/ogg" />
+              <source src="11.mp3" type="audio/mpeg" />
+              您的浏览器不支持 audio 元素。
+            </audio>
+            <div style="text-align: end">
+              <p>返回首页?</p>
+              <a href="./first.html" target="_top">点击这里!</a>
+            </div>
+          </div>
+          <div class="flex:1" style="background: #999"><h1>评论区</h1></div>
+        </div>
+        <div
+          style="
+            max-width: 700px;
+            margin: 30px auto;
+            padding: 15px;
+            line-height: 1.7;
+          
+          "
+          class="flex:1 neirong"
+        >
+          <b>歌词</b>
+          <p>没什么 大愿望</p>
+          <p></p>
+          没有什么事 要赶
+          <p></p>
+          看见路口红灯 一直闪
+          <p></p>
+          它像 眨眼的小太阳
+          <p></p>
+          乌云还 挺大胆
+          <p></p>
+          顶在头上 吹不散
+          <p></p>
+          我抓在手里 捏成棉花糖
+          <p></p>
+          什么烦恼 不能忘
+          <p>既然 是路一定有转弯</p>
+          <p>哪个风景 都漂亮</p>
+          <p>揉揉疲惫的眼睛 停下来 看一看</p>
+          <p>美好简单</p>
+          <p>你看</p>
+          <p>小狗在叫 树叶会笑</p>
+          <p>风声在呢喃</p>
+          <p>不如好好 欣赏一秒</p>
+          <p>迷迷糊糊的 浪漫</p>
+          <p>只要 一觉醒来 床单洒满</p>
+          <p>阳光的 温暖</p>
+          <p>不去想 不必想</p>
+          <p>不用急急忙忙 说一个 答案</p>
+          <p>笑一笑 就灿烂</p>
+          <p>唱一句歌 就舒展</p>
+          <p>收集一点一滴 小美满</p>
+          <p>都是 幸福的花样</p>
+          <p>没道理 的开朗</p>
+          <p>打扮 平凡的日常</p>
+          <p>找到自己 最合身的衣裳</p>
+          <p>只要自己 够喜欢</p>
+          <p>至少 还有温柔的眼光</p>
+          <p>还在夜里 看月亮</p>
+          <p>心情铺得再满 也要留一扇天窗</p>
+          <p>岁月很长</p>
+          <p><b>你看</b></p>
+          <p><b>小狗在叫 树叶会笑</b></p>
+          <p><b>风声在呢喃</b></p>
+          <p><b>不如好好 欣赏一秒</b></p>
+          <p><b>迷迷糊糊的浪漫</b></p>
+          <p><b>只要 一觉醒来 床单洒满</b></p>
+          <p><b>阳光的温暖</b></p>
+          <p><b>不去想 不必想</b></p>
+          <p><b>不用急急忙忙 说一个 答案</b></p>
+          <p>你愿相信什么</p>
+          <p>就把世界 看成什么样</p>
+          <p>偶尔难题 加点重量</p>
+          <p>越要 轻轻地旋转</p>
+          <p>所以 无论如何</p>
+          <p>记得保管 小小的光环</p>
+          <p>笑就好 哭也好</p>
+          <p>今天 就是明天最好的 陪伴</p>
+          <p>笑就好 哭也好</p>
+          <p>自己 就是自己最好的 陪伴</p>
+          <p>功能有待完善，<b>敬请期待</b></p>
+        </div>
+      </div>
+
+      <div
         style="
           background: #c0c0c093;
           text-align: center;
           padding: 1px;
           text-align: center;
           padding: 1px;
-          font-size:x-small;
+          font-size: x-small;
         "
       >
         <p></p>
@@ -192,10 +239,6 @@
           >友情链接：https://www.bilibili.com/</a
         >
       </div>
-
-        
     </div>
-
-    
-</body>
+  </body>
 </html>
